@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title%}Contact | Nizamuddin Shaikh {% endblock %}
+
+{% block content%}
+<main class="section">
+<section class="contact">
+<h2>Let’s work together</h2>
+<p>I am looking for internships and entry-level roles in Python, machine learning, data science and software development.</p>
+<div class="actions"><a class="btn btn-amber" href="mailto:nizamuddinshaikh835@gmail.com">Email me</a><a class="btn btn-light" href="tel:+919749701973">+91 9749701973</a><a class="btn btn-light" href="https://www.linkedin.com/in/nizamuddin-shaikh-44882b292">LinkedIn</a></div>
+</section>
+<form class="form" id="contact-form">
+<label for="name">Your name</label><input id="name" name="name" required>
+<label for="email">Your email</label><input id="email" name="email" type="email" required>
+<label for="subject">Subject</label><input id="subject" name="subject" required>
+<label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+<button class="btn btn-solid" type="submit">Send email</button>
+</form>
+</main>
+
+{% endblock %}

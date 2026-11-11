@@ -1,0 +1,50 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Home | Nizamuddin Shaikh
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <span class="status">
+            <i class="dot"></i>
+            Available for internships and entry-level roles
+        </span>
+
+        <h1>
+           Aspiring AI & Data Scientist | Building Smart Solutions with Python, Machine Learning and Data Science..
+        </h1>
+
+        <p class="lead">
+            Hi, I'm Nizamuddin Shaikh, an MCA student passionate about Artificial Intelligence, Machine Learning, and Data Science. I enjoy working with Python, exploring data, developing predictive models, and building intelligent web applications using Django and Flask. I am continuously learning new technologies and looking forward to solving real-world problems through innovative solutions.
+        </p>
+
+        <div class="actions">
+
+            <a class="btn btn-solid" href="{% url 'project' %}">
+                View Projects
+            </a>
+
+            <a class="btn btn-ghost" href="{% url 'contact' %}">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="portrait">
+        <img src="{% static 'images/mypic.jpg' %}"
+             alt="Nizamuddin Shaikh">
+    </div>
+
+</section>
+
+{% endblock %}

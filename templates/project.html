@@ -1,0 +1,65 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Projects | Nizamuddin Shaikh
+{% endblock %}
+
+{% block content %}
+
+<main class="section">
+
+    <h2>Projects</h2>
+
+    <!-- Customer Churn Prediction -->
+    <article class="featured customer-card">
+
+        <div>
+            <span class="chip">Django Web App</span>
+
+            <h3>Customer Churn Prediction System</h3>
+
+            <p>
+                A web-based system that predicts customer churn
+                using machine learning classification. It shows
+                churn probability, assigns a risk level and suggests
+                retention actions.
+            </p>
+
+            <ul class="tags">
+                <li>Python</li>
+                <li>Django</li>
+                <li>Scikit-learn</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </div>
+
+    </article>
+
+    <!-- Automated Waste Classification -->
+    <article class="featured">
+
+        <div>
+            <span class="chip">Flask Web App</span>
+
+            <h3>Automated Waste Classification</h3>
+
+            <p>
+                A web-based system that identifies and classifies
+                waste categories using machine learning and CNN concepts.
+            </p>
+
+            <ul class="tags">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>TensorFlow</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </div>
+
+    </article>
+
+</main>
+
+{% endblock %}
