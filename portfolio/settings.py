@@ -119,7 +119,7 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR /  "static"]
-
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 # Email
@@ -128,5 +128,8 @@ STATICFILES_DIRS = [BASE_DIR /  "static"]
 MAILERS = {
     "default": {
         "BACKEND": "django.core.mail.backends.console.EmailBackend",
+    },
+     "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
